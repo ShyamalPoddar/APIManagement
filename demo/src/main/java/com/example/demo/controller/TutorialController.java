@@ -19,7 +19,7 @@ public class TutorialController {
     TutorialRepository tutorialRepository;
 
 
-    @GetMapping("/tutorials")
+    @GetMapping("/tutorial")
     public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
         try {
             List<Tutorial> tutorials = new ArrayList<Tutorial>();
